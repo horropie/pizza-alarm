@@ -6,6 +6,7 @@ from time import sleep
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
+import beautifulSoup
 
 # Phone Numbers go into this dictionary
 phoneNumberList = {"Name1": 01234567890, "Name2": 09876543210}
@@ -37,7 +38,7 @@ while True:
             # Email code
             sender = 'pythonpizzaalerts@gmail.com'
             # Put your email address in between the '' for receiver
-            receiver = 'jakob.hollweck@gmail.com'
+            receiver = 'YourMail'
 
             # Structuring the email
             msg = MIMEMultipart()
